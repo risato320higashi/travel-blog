@@ -1,0 +1,318 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 130px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+header h1 {
+    padding-left:20px;
+    margin: 20px 0 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    justify-content: left;
+    background-color: #333;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.new-articles {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    column-gap: 20px;
+}
+
+main{
+    margin-top: 150px; /* ヘッダーの高さ分のマージンを追加 */
+    position: relative;
+    box-sizing: border-box;
+}
+
+.main-item h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 0 0;
+}
+
+.article-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.article-item  img {
+    width: 100%;
+    height: auto;
+}
+
+.article-item p {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.readmore {
+    text-align: center;
+}
+
+.readmore a {
+    font-size: 0.8rem;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #333;
+}
+
+.readmore a:hover {
+    transition: all 0.3s ease;
+    padding-bottom: 0; /* 線を消す */
+    border-bottom-color: transparent; /* 線の色を透明に */ 
+}
+
+.main-airticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 50px;
+}
+
+.main-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.main-item img {
+    width: 100%;
+    height: auto;
+}
+
+.detail {
+    display: inline-block;
+    text-align: center;
+    padding: 0 50px 20px 50px;
+}
+
+.contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+#column {
+    width:70%;
+}
+
+aside {
+    width: 30%;
+}
+.aside-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 50px;
+    padding: 0 30px;
+}
+
+.aside-wrapper h3{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.aside-item1, .aside-item2, .aside-item3 {
+    margin: 30px 0;
+}   
+.aside-item1 img{
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto 0 auto;
+}
+
+.aside-item1 p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.aside-item2 img {
+    width: 100%;
+    height: auto;
+}
+
+.aside-item2 p {
+    font-size: 0.9rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.aside-item3 ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside-item3 li {
+    padding: 20px;
+    border-bottom: 0.8px solid #333;
+}
+
+.aside-item3 li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.aside-item3 .archive-head {
+    border-top: 0.8px solid #333;
+}
+.footer-wrapper {
+    background-color: #f8f8f8;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content h3 {
+    margin-bottom: 30px;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 30%;
+}
+
+.footer-about p {
+    display: inline-block;
+    margin-top: 0;
+    line-height: 1.5rem;
+}
+
+.footer-about details {
+    line-height: 2rem;
+}
+
+.footer-menu{
+    width: 30%;
+}
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-menu li {
+    padding: 15px 0 15px 15px;
+    border-bottom: 0.8px solid #333;
+}
+.footer-menu li.menu-head {
+    border-top: 0.8px solid #333;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: #333;
+}
+.footer-links {
+    width: 30%;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-info {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 20px 0;
+}
+
+/* レスポンシブデザインのCSS */
+@media (max-width: 768px) {
+    
+    .new-articles {
+        grid-template-columns: 1fr;
+    }
+
+    .article-item{
+        margin-bottom: 30px;
+    }
+    .contents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #column {
+        width: 100%;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    #column img {
+        width: 100%;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .aside-item1 img {
+        width: 30%;
+        height: auto;
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .footer-about, .footer-menu, .footer-links {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
