@@ -1,8 +1,9 @@
-body{
+*{
     font-family: 'Noto Sans', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -270,7 +271,14 @@ aside {
 
 /* レスポンシブデザインのCSS */
 @media (max-width: 768px) {
-    
+    .nav-links{
+     justify-content: space-between;
+     padding: 10px 10px;
+    }
+
+    .nav-links li {
+        padding: 0;
+    }
     .new-articles {
         grid-template-columns: 1fr;
     }
